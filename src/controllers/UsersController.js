@@ -1,5 +1,5 @@
 const AppError = require('../utils/AppError');
-const knex = require('../database/knex/migrations');
+const knex = require('../database/knex');
 class UsersController {
   async create(request, response) {
     const { name, email, password } = request.body
